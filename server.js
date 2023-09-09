@@ -600,7 +600,7 @@ app.post("/Follow", (req, res) => {
 app.post("/IndividualUser", (req, res) => {
   let profileId = req.body.profile_id;
   let result = [];
- 
+
   db.collection("Users")
     .aggregate([
       {

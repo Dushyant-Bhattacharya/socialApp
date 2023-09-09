@@ -47,6 +47,8 @@ function Profile() {
     $.ajax({
       url: "/IndividualUser",
       method: "POST",
+      contentType:"application/json",
+      dataType:"json",
       data: JSON.stringify({
         profile_id: profileId,
       }),

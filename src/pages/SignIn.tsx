@@ -11,7 +11,7 @@ import dog1 from "../images/dog1.jpg";
 import dog2 from "../images/dog2.jpg";
 import cat1 from "../images/cat1.jpg";
 function SignIn() {
-  const { authData, setAuthData, googleFetch } = useContext(mainContext);
+  const { authData, setAuthData } = useContext(mainContext);
   const location = useLocation();
   const [username, setUserName] = useState("");
   const [winWidth, setWinWidth] = useState(window.innerWidth);
@@ -27,8 +27,7 @@ function SignIn() {
   useEffect(() => {
     if (
       location.pathname == "/Auth" &&
-      window.google != undefined &&
-      googleFetch == true
+      window.google != undefined 
     ) {
       const googleBtn = document.getElementById("googleRenderedBtn");
       if (window.innerWidth > 300) {

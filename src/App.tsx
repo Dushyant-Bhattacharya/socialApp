@@ -120,7 +120,7 @@ function App() {
                 setAuthData({
                   newUser: data.newUser,
                   loggedIn: true,
-                  image: responseData.picture,
+                  image: responseData.image,
                   userData: responseData,
                 });
               } else {
