@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  background-color: rgb(23 23 23 / 1);
+}
+.styledScrollbar::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgb(0, 0, 0);
+}
+
+.styledScrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(82, 82, 82, 0.514);
+  border-radius: 10px;
+  transition: background-color 2s;
+}
+
+/* Handle on hover */
+.styledScrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(148, 148, 148, 0.863);
+  border-radius: 10px;
+  cursor: grab;
+}
+a {
+  color: rgb(231, 231, 231) !important;
+}
+.ant-carousel .slick-dots li button
+{
+  background-color: rgb(197, 46, 79) !important;
+}
